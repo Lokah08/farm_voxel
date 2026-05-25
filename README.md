@@ -1,3 +1,4 @@
+Inspired by:
 https://x.com/givros/status/2058129799185379477
 
-great! Thank you.
+Great work, thank you.
