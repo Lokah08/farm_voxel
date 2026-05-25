@@ -1,0 +1,191 @@
+Use the reference image named farm_voxel.png as the main visual guide.
+
+Create a playable-looking low-poly voxel agricultural farm diorama based on farm_voxel.png.
+
+Build the project with Vite + TypeScript + Three.js.
+
+The goal is to recreate the layout, proportions, colors, style and object placement of farm_voxel.png as a clean 3D voxel farming-game environment.
+
+Very important:
+Do not create one single merged model.
+Do not create the farm as one big static mesh.
+Every visible object must be created as a separate reusable asset.
+The scene must be assembled from separated assets, placed individually in the world.
+Each major object should have its own creation function or module.
+
+Visual style:
+The scene must use a true low-poly voxel aesthetic:
+- blocky geometry
+- cubic shapes
+- chunky voxel crops
+- voxel trees
+- voxel fences
+- simple faceted forms
+- colorful farming-game style
+- clean isometric diorama look
+
+Do not make the scene realistic.
+Do not make it smooth or painterly.
+Do not use rounded organic shapes.
+Everything should feel like a polished voxel game environment.
+
+Scene layout:
+Recreate the composition from farm_voxel.png:
+- red barn with green roof in the upper-left area
+- cow pen near the barn
+- large voxel tree behind the barn
+- greenhouse in the upper-right area
+- small shed near the greenhouse
+- tractor with trailer near the center
+- entrance gate at the bottom center
+- multiple crop plots in the lower and middle areas
+- dirt paths connecting all areas
+- wooden fences around the farm
+- stone borders, hedges, flowers and bushes around the perimeter
+
+Create the following assets separately:
+
+Ground and path assets:
+- grass ground tile
+- dirt path tile
+- stone path tile
+- crop soil tile
+- dirt path corner
+- dirt path crossing
+- raised crop bed base
+
+Fence and border assets:
+- wooden fence post
+- wooden fence segment
+- wooden gate
+- low stone wall segment
+- hedge block
+- flower hedge block
+
+Building assets:
+- red barn body
+- green barn roof
+- barn front door
+- barn window
+- barn side lean-to
+- greenhouse frame
+- greenhouse glass panels
+- greenhouse door
+- small green shed
+- shed brown roof
+- farm notice board
+
+Crop assets:
+- voxel cabbage crop
+- voxel wheat row
+- voxel carrot row
+- voxel tomato plant row
+- voxel corn stalk row
+- voxel pumpkin crop
+- trellis crop row
+- small flower crop
+- crop bed border
+
+Vehicle assets:
+- red tractor body
+- tractor cabin
+- tractor wheels
+- tractor exhaust
+- wooden trailer
+- trailer wheels
+
+Animal assets:
+- black-and-white voxel cow
+- cow pen fence
+- cow water trough
+
+Farm prop assets:
+- hay bale
+- hay bale stack
+- wooden crate
+- barrel
+- blue water barrel
+- wheelbarrow
+- shovel
+- rake
+- pitchfork
+- bucket
+- sack
+- mailbox
+- birdhouse
+- flower pot
+
+Vegetation assets:
+- large voxel tree
+- small voxel tree
+- fruit tree
+- bush
+- flowering bush
+- grass tuft
+- small rock
+- decorative stone cluster
+
+Texture generation:
+Use $imagegen to generate stylized voxel-compatible textures, then apply them to the matching assets.
+
+Generate separate textures for:
+- grass
+- dirt path
+- crop soil
+- red barn wood
+- green roof tiles
+- greenhouse glass
+- wooden fence
+- stone wall
+- hay
+- wheat
+- crop leaves
+- pumpkin
+- tractor red metal
+- black rubber wheels
+- cow black-and-white pattern
+- flowers
+
+Technical requirements:
+- Use Vite + TypeScript + Three.js
+- Use a modular project structure
+- Use an orthographic isometric camera
+- Add ambient light and directional sunlight
+- Enable soft shadows
+- Add OrbitControls
+- Make the scene responsive
+- Keep all code clean and organized
+
+Suggested project structure:
+- src/main.ts
+- src/scene/createScene.ts
+- src/scene/camera.ts
+- src/scene/lights.ts
+- src/scene/controls.ts
+- src/assets/buildings.ts
+- src/assets/crops.ts
+- src/assets/vehicles.ts
+- src/assets/animals.ts
+- src/assets/props.ts
+- src/assets/vegetation.ts
+- src/assets/fences.ts
+- src/assets/ground.ts
+- src/textures/generateTextures.ts
+- src/layout/farmLayout.ts
+
+Interaction:
+Add basic camera controls:
+- mouse drag to rotate around the farm
+- mouse wheel to zoom
+- optional keyboard panning with WASD or arrow keys
+
+Deliverables:
+- a working Vite + TypeScript + Three.js project
+- a complete voxel farm scene based on farm_voxel.png
+- all objects created as separated reusable assets
+- generated textures applied correctly
+- the app must run with npm install and npm run dev
+
+Important:
+Do not create a generic farm.
+The goal is to reproduce farm_voxel.png as a modular low-poly voxel 3D farm diorama made from separated game-ready assets.

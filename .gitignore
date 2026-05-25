@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.chrome-profile/
+bk/
+farm-preview.png
+npm-debug.log*
+vite.out.log
+vite.err.log
